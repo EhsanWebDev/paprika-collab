@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+
+<body class="bg-black text-white">
+    <div class=" flex mt-2 text-[#a3a3ad] ">
+        <p>Kitchen /</p>
+    </div>
+
+    <div class="flex justify-between mt-2">
+        <div class="pl-3 text-xl">Scripts</div>
+
+        <div class="flex gap-4">
+            <div class="border rounded-sm border-gray-700 text-sm px-3 py-0.5">Script Library</div>
+            <div class="bg-orange-400 rounded-md  text-sm px-2 py-1">+ New Script</div>
+        </div>
+    </div>
+
+    <div class="flex items-center mt-5">
+        <div class="border rounded sm py- px-15"><input type="text" placeholder="Search by name" ></div>
+        <div class="ml-4">Column</div>
+
+        <div class="ml-auto text-xs text-[#a3a3ad]">3 Passing - 1 warning - 1 failed - last run 41d</div>
+    </div>
+
+    <div class="flex border-b border-gray-700 mt-2 text-sm text-gray-400 my-3">
+
+        <div class="w-[40%]">SCRIPT</div>
+        <div class="w-[15%]">RUNTIME</div>
+        <div class="w-[25%]">LAST RUN</div>
+        <div class="w-[20%]">OWNER</div>
+    </div>
+
+    <div class="flex border-b border-gray-700 text-sm mt-2 items-center">
+        <div class="w-[40%] text-[#e8eaed]">Enrich incident with CMDB
+            <p class="text-xs text-[#a3a3ad]">Looks up the affected CI in ServiceNow CMDB and attaches owner, environment, and...</p>
+        </div>
+        <div class="w-[15%] text-blue-300"> <span class="border border-cyan-700 px-2 py-0.5 rounded-sm bg-blue-950">Python</span></div>
+        <div class="w-[25%] text-[#a7c794]">Passed
+            <p class="text-gray-400 text-xs">842 ms • Apr 21, 2026</p>
+        </div>
+        <div class="w-[20%] text-[#a3a3ad]">Sam Patel</div>
+    </div>
+
+    <div class="flex border-b border-gray-700 text-sm mt-2 items-center">
+        <div class="w-[40%] text-[#e8eaed]">Summarize alert with LLM
+            <p class="text-xs text-[#a3a3ad]">LSends the alert payload to OpenAl for a one-paragraph human summary used in Slack...</p>
+        </div>
+        <div class="w-[15%] text-blue-300"> <span class="border border-cyan-700 px-2 py-0.5 rounded-sm bg-blue-950">TypeScript</span></div>
+        <div class="w-[25%] text-[#a7c794]">Passed
+            <p class="text-gray-400 text-xs">1.43s • Apr 19, 2026</p>
+        </div>
+        <div class="w-[20%] text-[#a3a3ad]">Priya Shah</div>
+    </div>
+    <div class="flex border-b border-gray-700 text-sm mt-2 items-center">
+        <div class="w-[40%] text-[#e8eaed]">Page on-call via Slack
+            <p class="text-xs text-[#a3a3ad]">Resolves the on-call schedule for a given service and posts a paging message into the...</p>
+        </div>
+        <div class="w-[15%] text-orange-300"> <span class=" border-cyan-700 px-2 py-0.5 rounded-sm bg-[#3d2c21]">JavaScript</span></div>
+        <div class="w-[25%] text-[#eeb28a]">Warnings
+            <p class="text-gray-400 text-xs">612 ms • Apr 12, 2026</p>
+        </div>
+        <div class="w-[20%] text-[#a3a3ad]">Jordan Kim</div>
+    </div>
+    <div class="flex border-b border-gray-700 text-sm mt-2 items-center">
+        <div class="w-[40%] text-[#e8eaed]">Rotate AWS access keys
+            <p class="text-xs text-[#a3a3ad]">Creates a new IAM access key for the target service account, deactivates the previous...</p>
+        </div>
+        <div class="w-[15%] text-blue-300"> <span class="border border-cyan-700 px-2 py-0.5 rounded-sm bg-blue-950">Python</span></div>
+        <div class="w-[25%] text-red-400">Failed
+            <p class="text-gray-400 text-xs">1.98s • Apr 25, 2026</p>
+        </div>
+        <div class="w-[20%] text-[#a3a3ad]">Sam Patel</div>
+    </div>
+    <div class="flex border-b border-gray-700 text-sm mt-2 items-center">
+        <div class="w-[40%] text-[#e8eaed]">Resolve linked Jira issues
+            <p class="text-xs text-[#a3a3ad]">Walks the issue links of a Jira ticket and returns a flat list with statuses, used by triage...</p>
+        </div>
+        <div class="w-[15%] text-blue-300"> <span class="border border-[#1e293b] px-2 py-0.5 rounded-sm bg-[#0f172a]">Bash</span></div>
+        <div class="w-[25%] text-[#a7c794]">Passed
+            <p class="text-gray-400 text-xs">387 ms • Apr 2, 2026</p>
+        </div>
+        <div class="w-[20%] text-[#a3a3ad]">Alex Romero</div>
+    </div>
+    <div class="flex border-b border-gray-700 text-sm mt-2 items-center">
+        <div class="w-[40%] text-[#e8eaed]">Force AD password reset
+            <p class="text-xs text-[#a3a3ad]">Triggers a forced password reset for a user via the on-prem Active Directory connector...</p>
+        </div>
+        <div class="w-[15%] text-blue-300"> <span class="border border-[#312e81] px-2 py-0.5 rounded-sm bg-[#1e1b4b]">Powershell</span></div>
+        <div class="w-[25%] text-gray-400">Untested
+            <p class="text-gray-400 text-xs">842 ms • Apr 21, 2026</p>
+        </div>
+        <div class="w-[20%] text-[#a3a3ad]">Priya Shah</div>
+    </div>
+    <!-- <div class="flex border-b border-gray-700 text-sm mt-2">
+        <div class="w-[40%]">Summarize alert with LLM</div>
+        <div class="w-[15%]">TypeScript</div>
+        <div class="w-[25%]">Passed</div>
+        <div class="w-[20%]">Priya Shah</div>
+    </div>
+    <div class="flex border-b border-gray-700 text-sm mt-2">
+        <div class="w-[40%]">Page on-call via Slack</div>
+        <div class="w-[15%]">JavaScript</div>
+        <div class="w-[25%]">Warnings</div>
+        <div class="w-[20%]">Jordan Kim</div>
+    </div>
+    <div class="flex border-b border-gray-700 text-sm mt-2">
+        <div class="w-[40%]">Rotate AWS access keys</div>
+        <div class="w-[15%]">Python</div>
+        <div class="w-[25%]">Failed</div>
+        <div class="w-[20%]">Sam Patel</div>
+    </div> -->
+
+
+</body>
+
+</html>
